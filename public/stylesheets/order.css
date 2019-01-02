@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f1f1f159;;
+}
+h1{
+    background: #f6f6f6;
+    width: 100%;
+    height: 100px;
+    line-height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+h1 img{
+    height: 80%;
+    padding: 10px;
+    float: left;
+}
+h2{
+    padding-top: 20px;
+}
+.people{
+    margin-left: 47px;
+}
+h3{
+    margin-top: 20px;
+}
+.confirm{
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    line-height: 100px;
+}
+.address{
+    width: 100%;
+    height: 238px;
+    background: white;
+    margin-top: 14px;
+    font-size: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+.phone{
+    float: right;
+    margin-right: 21px;
+}
+.symbol{
+    display: block;
+    height: 100%;
+    width: 5%;
+    float: left;
+}
+.tip{
+    display: block;
+    font-size: 26px;
+    font-weight: normal;
+    color: orangered;
+}
+.proList{
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background: #fff;
+}
+.proList img{
+    width: 300px;
+}
+.intro{
+    width: 60%;
+    font-size: 50px;
+    float: right;
+}
+.account{
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+}
+#sumNum{
+    width: 41%;
+    display: block;
+    float: left;
+    padding-left: 27%;
+}
+#name{
+    display: block;
+    padding: 71px 0 45px 0
+}
+#price{
+    color: red;
+    font-size: 53px;
+}
+.count{
+    width: 100%;
+    height: 100px;
+    background: white;
+    font-size: 48px;
+    position: fixed;
+    bottom: 0;
+    line-height: 100px;
+}
+.count span{
+    display: inline-block;
+    width: 75%;
+}
+.submit{
+    width: 25%;
+    height: 103%;
+    background: #ff5722f0;
+    font-size: 36px;
+    color: white;
+    border: none;
+}
+.send{
+    width: 100%;
+    height: 60px;
+    background: white;
+    margin-top: 20px;
+    font-size: 37px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.fee{
+    width: 100%;
+    height: 60px;
+    background: white;
+    /*margin-top: 20px;*/
+    font-size: 37px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.price{
+    color:red;
+}
+#num{
+    margin-left: 41%;
+}

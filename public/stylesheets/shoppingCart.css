@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top{
+    background-image: url(../images/co.jpg);
+    width: 100%;
+    height: 140px;
+    background-size: 100% 140px;
+}
+.top a{
+    display: block;
+    font-size: 50px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.top img{
+    width: 88px;
+    height: 100px;
+}
+.top a:hover{
+    text-decoration: underline;
+}
+.all{
+    margin-bottom: 275px;
+}
+.product{
+    width: 100%;
+    height: 350px;
+    background: #fcfcfc;
+    box-shadow: #f6f6f6 1px 3px;
+    margin-top: 10px;
+    padding: 0 3%;
+}
+.checkBox{
+    width: 7%;
+}
+.check{
+    width: 45%;
+    height: 30%;
+    margin: 0 auto;
+    display: block;
+}
+.imgBox{
+    width: 40%;
+    padding: 0 3%;
+}
+.imgBox img{
+    width: 100%;
+}
+.intro{
+    width: 100%;
+    height: 85%;
+    padding: 12.5% 0;
+}
+.proName{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.price{
+    font-size: 36px;
+    color: red;
+    margin: 10px 0;
+}
+.changeNum{
+    padding: 10px 0;
+}
+.account{
+    width: 100%;
+    height: 100px;
+    background: white;
+}
+.del{
+    width: 20%;
+    height: 90px;
+    font-size: 36px;
+    background: orange;
+    border: none;
+    border-radius: 42px;
+    float: right;
+    outline: none;
+}
+.check2{
+    width: 13%;
+    height: 30%;
+    float: left;
+    display: block;
+    margin: 35px 0;
+}
+.delete{
+    font-size: 36px;
+    float: right;
+    cursor: pointer;
+}
+.sub{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+input{
+    width: 49px;
+    height: 43px;
+    font-size: 30px;
+    text-align: center;
+}
+.add{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.sum{
+    width: 40%;
+    float: left;
+    padding: 20px 0;
+    font-size: 40px;
+}
+.token{
+    color: red;
+}
+#proTotal{
+    width: 100px;
+    height: 49px;
+    display: inline-block;
+}
+.bottom{
+    background: white;
+    width: 100%;
+    height: 175px;
+}
+.navDivide{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 28px;
+}
+.navDivide a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    height: 100%;
+}
+.navDivide span{
+    display: block;
+}
+.navDivide img{
+    width: 130px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#account{
+    margin-right: 20px;
+}
+.intro a{
+    color:black;
+    text-decoration: none;
+}

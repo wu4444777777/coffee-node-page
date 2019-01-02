@@ -1,0 +1,24 @@
+doctype html
+head
+    title classify
+    link(rel="stylesheet", href="stylesheets/classify.css")
+    script(type="text/javascript", src="javascripts/jquery-3.3.1.js")
+    script(src="javascripts/loadmore.js")
+    script(src="javascripts/hideTop.js")
+body
+    .top
+        a(href="javascript:history.back(-1)")
+            img(src="images/back.svg", class="img1")
+        a(href="shoppingCart", class="cart")
+            img(src="images/caer2.svg", class="img2")
+    .jiange
+    .proTr
+        each p,index in pro
+            if(index<6)
+                .proMod
+                    a(href="proDetail?id="+p.id)
+                        img(src=p.image)
+                    a(href="proDetail?id=" + p.id)
+                        span.proName #{p.name}
+                    span.price ￥#{p.price}
+    div(id="proTr")

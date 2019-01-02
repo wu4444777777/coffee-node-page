@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="phone-preview">
+        <form action="/login" method="post">
+          <h4>Login in</h4>
+          <input class="iptBox" type="text" placeholder="用户名" name="user" id="userBox">
+          <input class="iptBox" type="password" placeholder="密码" name="pass">
+          <input class="btn btn-success btn-md" type="submit">
+          <input class="btn btn-success btn-md" type="reset"><span id="tipBox"></span>
+          <div class="forget"><a href="#" id="forget">忘记密码？</a><a href="register">注册</a></div>
+        </form>
+      </div>
+    </div>
+    <script src="javascripts/jquery-3.3.1.js"></script>
+    <script src="javascripts/loginCheck.js" type="text/javascript"></script>
+  </body>
+</html>

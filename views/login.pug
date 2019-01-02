@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title login
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/css/bootstrap.min.css")
+        link(rel="stylesheet", href="stylesheets/login.css")
+    body
+        .banner
+            .phone-preview
+                form(action="/login", method="post")
+                    h4 Login in
+                    input(type="text", placeholder="用户名", class="iptBox", name="user",id="userBox")
+                    input(type="password", placeholder="密码", class="iptBox", name="pass")
+                    input(type="submit", class="btn btn-success btn-md")
+                    input(type="reset", class="btn btn-success btn-md")
+                    span#tipBox #{errors}
+                    .forget
+                        a(href="#", id="forget") 忘记密码？
+                        a(href="register") 注册
+        script(src="javascripts/jquery-3.3.1.js")
+        script(src="javascripts/loginCheck.js", type="text/javascript")

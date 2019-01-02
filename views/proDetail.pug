@@ -1,0 +1,56 @@
+doctype html
+head
+    title productDetail
+    link(rel="stylesheet", href="stylesheets/proDetail.css")
+body
+    .top
+        a(href="javascript:history.back(-1)")
+            img(src="images/back.svg")
+    each pro in list
+        .proImg
+            img(src=pro.image, id="proImg")
+        #proName #{pro.name}
+        .detail
+            table
+                tr
+                    td.price 价格
+                    td#price1 ￥#{pro.price}
+                tr
+                    td.price 数量
+                    td.num
+                        button(class="btn1", id="btn1", onclick="changeNum('minus')") -
+                        input(type="text", value="1", id="ipt")
+                        button(class="btn1", id="btn2", onclick="changeNum('add')") +
+        .intro
+            h1 宝贝详情
+            .introList
+                span 产地：#{pro.birthplace}
+                span 保质期：#{pro.deadline}
+                span 系列：#{pro.series}
+            .deadline 生产日期: 2018-01-05 至 2018-01-05
+            .imgList
+                img(src=pro.image1)
+                img(src=pro.image2)
+                img(src=pro.image3)
+    .account
+        .symbol
+            a(href="order")
+                span.tu
+                    img(src="images/store.svg", class="store")
+            a(href="shoppingCart")
+                span.tu#cart
+                    img(src="images/cart.svg", class="cart")
+                    p#num 0
+        each btn in list
+            a(href="order?id=" + btn.id)
+                button.buy 立即购买
+        button(id="add") 加入购物车
+            //a(href="shoppingCart?id=" + add.id, id="add") 加入购物车
+    div(id="outTip", class="")
+        button#close x
+        p 该商品已在购物车中
+    script(src="javascripts/jquery-3.3.1.js")
+    script(src="javascripts/jquery-addShopping.js")
+    script(src="javascripts/proDetail.js")
+    script(src="javascripts/addCart.js")
+    script(src="javascripts/hideTop.js")

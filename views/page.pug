@@ -1,0 +1,126 @@
+doctype  html
+html
+    head
+        title index
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="./stylesheets/css/bootstrap.min.css")
+        link(rel="stylesheet", href="./stylesheets/index.css")
+    body
+        .top
+            #user
+                span.outName #{username}
+                //a(href="login", id="out") 登陆
+            .searchBox
+                input(type="text", class="searchIpt")
+            .user
+                a(href="login", class="symbol2") 登陆
+                span /
+                a(href="register", class="symbol2") 注册
+        .center
+            #car-exam(class="carousel slider")&attributes({"data-ride":"carousel"})
+                ol.carousel-indicators
+                    li.active&attributes({"data-target":"#car-exam","data-slide-to":"1"})
+                    li&attributes({"data-target":"#car-exam","data-slide-to":"2"})
+                    li&attributes({"data-target":"#car-exam","data-slide-to":"3"})
+                .carousel-inner
+                    .item.active
+                        img.sliderImg&attributes({"src":"./images/1.jpg"})
+                    .item
+                        img.sliderImg&attributes({"src": "./images/2.jpg"})
+                    .item
+                        img.sliderImg&attributes({"src": "./images/3.jpg"})
+                    a(href="#car-exam", class="carousel-control left", data-slide="prev")
+                        span.glyphicon.glyphicon-chevron-left
+                    a(href="#car-exam", class="carousel-control right", data-slide="next")
+                        span.glyphicon.glyphicon-chevron-right
+            .coffeeType#classify
+                .type
+                    a(href="classify?type=coffee")
+                        img(src="./images/coffee.svg")
+                        p 咖啡
+                .type
+                    a(href="classify?type=bottle")
+                        img(src="./images/coffeeBottle.svg")
+                        p 咖啡用具
+                .type
+                    a(href="classify?type=bean")
+                        img(src="./images/coffeeBean.svg")
+                        p 咖啡豆
+                .type
+                    a(href="classify?type=cookie")
+                        img(src="./images/cookie.svg")
+                        p 曲奇饼
+            .productList
+                .proBox
+                    .proTitle
+                        h4: span
+                            img(src="./images/tip.svg")
+                            |咖啡
+                            img(src="./images/tip.svg")
+                    .product
+                        .proRight
+                            .prTop
+                                each i,index in result
+                                    if(index < 4)
+                                        a(href="proDetail?id="+i.id)
+                                            img(src=i.image)
+                .proBox
+                    .proTitle
+                        h4: span
+                            img(src="./images/bottle.svg")
+                            |咖啡壶
+                            img(src="./images/bottle.svg")
+                    .product
+                        .proRight
+                            .prTop
+                                each i,index in result
+                                    if(index >3 && index < 8)
+                                        a(href="proDetail?id="+i.id)
+                                            img(src=i.image)
+                .proBox
+                    .proTitle
+                        h4: span
+                            img(src="./images/bean.svg")
+                            | 咖啡豆
+                            img(src="./images/bean.svg")
+                    .product
+                        .proRight
+                            .prTop
+                                each i,index in result
+                                    if(index >7 && index <12)
+                                        a(href="proDetail?id="+i.id)
+                                            img(src=i.image)
+                .proBox
+                    .proTitle
+                        h4: span
+                            img(src="./images/cooki.svg")
+                            |曲奇饼
+                            img(src="./images/cooki.svg")
+                    .product
+                        .proRight
+                            .prTop
+                                each i,index in result
+                                    if(index > 11 && index < 16)
+                                        a(href="proDetail?id="+i.id)
+                                            img(src=i.image)
+        .bottom
+            .navDivide
+                a(href="page")
+                    span: img(src="./images/shop.svg")
+                    p 首页
+            .navDivide
+                a(href="#classify")
+                    span: img(src="./images/order.svg")
+                    p 分类
+            .navDivide
+                a(href="shoppingCart")
+                    span: img(src="./images/shopcart.svg")
+                    p 购物车
+            .navDivide
+                span
+                    img(src="./images/my.svg")
+                    p 我的
+                    img(src="./images/backTop.svg", id="backTop")
+        script(type="text/javascript", src="javascripts/jquery-3.3.1.js")
+        script(type="text/javascript", src="javascripts/bootstrap.js")
+        script(type="text/javascript", src="javascripts/page.js")

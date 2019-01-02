@@ -1,0 +1,57 @@
+doctype html
+head
+    title shoppingCart
+    link(rel="stylesheet", href="stylesheets/shoppingCart.css")
+body
+    .top
+        a(href="javascript:history.back(-1)")
+            img(src="images/back.svg")
+    .all
+        each pro,index in cart
+            table(class="product", id="product"+index)
+                tr(class="pro", id="pro" + index)
+                    td.checkBox
+                        input(type="checkbox", class="check", id="check"+index, name="singleCheck", onclick="selectSingle('ipt"+index+"');")
+                    td.imgBox
+                        a(href="proDetail?id="+pro.id)
+                            img(src=pro.image)
+                    td
+                        .intro
+                            a(href="proDetail?id="+pro.id)
+                                span.proName #{pro.name}
+                            .price
+                                span#price ￥#{pro.price}
+                            .changeNum
+                                button(class="sub", id="btn" + index, onclick="changeNum('ipt" + index + "','minus')") -
+                                input(type="text", value=+pro.num, id="ipt"+index, name="inpt")
+                                button(class="add", id="btn"+index, onclick="changeNum('ipt" + index + "','add')") +
+                                span(class="delete", id="del"+index, onclick="deleteOne("+index+")")
+                                    img(src="images/delete1.svg")
+    .footer
+        .account
+            input(type="checkbox", class="check2", id="allCheck", onclick="selectAll()")
+            .sum
+                p 总计:
+                    span.token ￥
+                        span#total
+            button(class="del", id="account") 结算
+            button(class="del", id="del") 删除
+        .bottom
+            .navDivide
+                a(href="page")
+                    span: img(src="./images/shop.svg")
+                    p 返回首页
+            .navDivide
+                a(href="#classify")
+                    span: img(src="./images/order.svg")
+                    p 分类
+            .navDivide
+                a(href="shoppingCart")
+                    span: img(src="./images/shopcart.svg")
+                    p 购物车
+            .navDivide
+                span: img(src="./images/my.svg")
+                p 我的
+    script(src="javascripts/jquery-3.3.1.js")
+    script(src="javascripts/shoppingCart.js")
+    script(src="javascripts/delAjax.js")

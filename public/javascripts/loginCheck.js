@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("#userBox").focus(function(){
+        $("#tipBox").hide();
+    });
+    $("out").click(function(){
+        $("#user").css("display","none");
+        $(".user").css("display","block")
+    })
+});

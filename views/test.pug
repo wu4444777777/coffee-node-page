@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    p Welcome ! #{id}
+    p 我的邮箱是 #{name}
+    p #{infos}
+    //mixin ccc
+    //    if block
+    //        block
+    //    else
+    //        p 默认
+    //+ccc
+    //    p -------
+    //+ccc
+    //    p 随便写点啥
+    //
+    //mixin rest(name,...others)
+    //    each n in others
+    //        p #{n}
+    //+rest("old_chow",1,2,3,4,5)
+    //
+    //mixin link(href,name)
+    //    a(href=href)&attributes(attributes)= name
+    //+link('/foo', 'foo')(class='btn')
+    ////class='btn'对应attributes(attributes)
+    //

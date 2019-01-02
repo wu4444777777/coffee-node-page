@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/register.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="phone-register">
+        <form action="/register" method="post" onsubmit="return check(this)">
+          <input type="text" placeholder="用户名" name="user" id="username"><span class="tipbox" id="userError"></span>
+          <input type="password" placeholder="密码" name="password" id="password"><span class="tipbox" id="passError"></span>
+          <input type="password" placeholder="再次输入密码" name="secPass" id="secPass"><span class="tipbox" id="secError"></span>
+          <input type="text" placeholder="联系方式" name="telephone" id="telephone"><span class="tipbox" id="phoneError"></span>
+          <input type="text" placeholder="email" name="email" id="email"><span class="tipbox" id="emailError"></span>
+          <input type="text" placeholder="qq" name="qq" id="qq"><span class="tipbox" id="qqError"></span>
+          <input class="btn btn-success" type="submit" value="立即注册"><span id="tipBox"></span>
+        </form>
+      </div>
+    </div>
+    <script src="javascripts/jquery-3.3.1.js"></script>
+    <script src="javascripts/register.js"></script>
+  </body>
+</html>
